@@ -28,7 +28,20 @@ source .doc-proofreader_venv/bin/activate
 pip install .
 ```
 
+5. Create .env file. Make sure to update the API key with your actual API key.
+
+For bash/zsh:
+
+```bash
+touch ./doc_proofreader/.env
+echo 'OPENAI_API_KEY="YourAPIKeyHere"' >> ./doc_proofreader/.env
+echo 'MODEL_VERSION="gpt-4-1106-preview"' >> ./doc_proofreader/.env
+```
+
+
 ## Usage
+
+
 
 Run using this command:
 

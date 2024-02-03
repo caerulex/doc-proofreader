@@ -13,6 +13,7 @@ from doc_proofreader.prompts.user_prompts import USER_PROMPT_1, USER_PROMPT_3
 
 load_dotenv()
 API_KEY = os.getenv("OPENAI_API_KEY", "")
+MODEL_VERSION = os.getenv("MODEL_VERSION", "")
 client = OpenAI(api_key=API_KEY)
 
 
@@ -66,7 +67,7 @@ def process_chunk_with_gpt4(chunk: str, additional_instructions: str):
 
     response = client.chat.completions.create(
         messages=messages,
-        model="gpt-4-1106-preview",
+        model=MODEL_VERSION,
         temperature=0.6,
         # max_tokens=1200,
     )
