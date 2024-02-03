@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "doc-proofreader"
+version = "0.1.0"
+description = "A simple document proofreading tool that utilizes OpenAI's GPT models."
+authors = [{name = "caerulex", email = "timelesswind@gmail.com"}]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "python-docx>=1.1.0",
+    "openai>=1.10.0",
+    "python-dotenv>=1.0.1"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "ruff",
+]
+test = [
+    "pytest",
+]
+
+[project.urls]
+Homepage = "http://example.com/"
+Repository = "http://example.com/"
