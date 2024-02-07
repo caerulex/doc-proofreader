@@ -30,6 +30,8 @@ pip install .
 
 5. Create and Populate Environment Variables
 
+Don't forget to replace "YourAPIKeyHere" with the actual API key.
+
 For Unix/Linx
 ```bash
 touch ./doc_proofreader/.env
