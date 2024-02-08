@@ -28,6 +28,21 @@ source .doc-proofreader_venv/bin/activate
 pip install .
 ```
 
+5. Create and Populate Environment Variables
+
+Don't forget to replace "YourAPIKeyHere" with the actual API key.
+
+For Unix/Linx
+```bash
+touch ./doc_proofreader/.env
+echo 'OPENAI_API_KEY="YourAPIKeyHere"' >> ./doc_proofreader/.env
+```
+Or, if exporting
+
+```bash
+export OPENAI_API_KEY="YourAPIKeyHere"
+```
+
 ## Usage
 
 Run using this command:
