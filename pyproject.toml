@@ -4,10 +4,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "doc-proofreader"
-version = "0.1.0"
+version = "0.1.1"
 description = "A simple document proofreading tool that utilizes OpenAI's GPT models."
 authors = [{name = "caerulex", email = "timelesswind@gmail.com"}]
-license = "MIT"
 readme = "README.md"
 requires-python = ">=3.10"
 classifiers = [
@@ -34,3 +33,6 @@ test = [
 [project.urls]
 Homepage = "http://example.com/"
 Repository = "http://example.com/"
+
+[tool.setuptools]
+py-modules = []
