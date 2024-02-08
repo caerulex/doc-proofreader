@@ -97,7 +97,7 @@ def export_proofreads(document_path: str, output: str, save_dir: str):
     else:
         output_file_path = output_file_name
 
-    with open(output_file_path, "w") as file:
+    with open(output_file_path, "w", encoding="utf-8") as file:
         file.write(output)
     print(f"Results saved to '{output_file_path}'")
 
